@@ -1,0 +1,74 @@
+Microsoft Windows [Version 10.0.19045.3930]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Dell>g:
+
+G:\>cd crud
+
+G:\crud>python -m pip install -U pip
+Requirement already satisfied: pip in c:\users\dell\appdata\local\programs\python\python312\lib\site-packages (23.2.1)
+Collecting pip
+  Obtaining dependency information for pip from https://files.pythonhosted.org/packages/15/aa/3f4c7bcee2057a76562a5b33ecbd199be08cdb4443a02e26bd2c3cf6fc39/pip-23.3.2-py3-none-any.whl.metadata
+  Using cached pip-23.3.2-py3-none-any.whl.metadata (3.5 kB)
+Using cached pip-23.3.2-py3-none-any.whl (2.1 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 23.2.1
+    Uninstalling pip-23.2.1:
+      Successfully uninstalled pip-23.2.1
+Successfully installed pip-23.3.2
+
+G:\crud>pip install virtualenv
+Collecting virtualenv
+  Using cached virtualenv-20.25.0-py3-none-any.whl.metadata (4.5 kB)
+Collecting distlib<1,>=0.3.7 (from virtualenv)
+  Using cached distlib-0.3.8-py2.py3-none-any.whl.metadata (5.1 kB)
+Collecting filelock<4,>=3.12.2 (from virtualenv)
+  Using cached filelock-3.13.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting platformdirs<5,>=3.9.1 (from virtualenv)
+  Using cached platformdirs-4.1.0-py3-none-any.whl.metadata (11 kB)
+Using cached virtualenv-20.25.0-py3-none-any.whl (3.8 MB)
+Using cached distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+Using cached filelock-3.13.1-py3-none-any.whl (11 kB)
+Using cached platformdirs-4.1.0-py3-none-any.whl (17 kB)
+Installing collected packages: distlib, platformdirs, filelock, virtualenv
+Successfully installed distlib-0.3.8 filelock-3.13.1 platformdirs-4.1.0 virtualenv-20.25.0
+
+G:\crud>virtualenv vrud_env
+created virtual environment CPython3.12.1.final.0-64 in 2908ms
+  creator CPython3Windows(dest=G:\crud\vrud_env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, via=copy, app_data_dir=C:\Users\Dell\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==23.3.1
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+G:\crud>cd vrud_env
+
+G:\crud\vrud_env>cd scripts
+
+G:\crud\vrud_env\Scripts>activate
+
+(vrud_env) G:\crud\vrud_env\Scripts>pip install django
+Collecting django
+  Using cached Django-5.0.1-py3-none-any.whl.metadata (4.2 kB)
+Collecting asgiref<4,>=3.7.0 (from django)
+  Using cached asgiref-3.7.2-py3-none-any.whl.metadata (9.2 kB)
+Collecting sqlparse>=0.3.1 (from django)
+  Using cached sqlparse-0.4.4-py3-none-any.whl (41 kB)
+Collecting tzdata (from django)
+  Using cached tzdata-2023.4-py2.py3-none-any.whl.metadata (1.4 kB)
+Using cached Django-5.0.1-py3-none-any.whl (8.1 MB)
+Using cached asgiref-3.7.2-py3-none-any.whl (24 kB)
+Using cached tzdata-2023.4-py2.py3-none-any.whl (346 kB)
+Installing collected packages: tzdata, sqlparse, asgiref, django
+Successfully installed asgiref-3.7.2 django-5.0.1 sqlparse-0.4.4 tzdata-2023.4
+
+[notice] A new release of pip is available: 23.3.1 -> 23.3.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+(vrud_env) G:\crud\vrud_env\Scripts>cd..
+
+(vrud_env) G:\crud\vrud_env>django-admin startproject crudproject
+
+(vrud_env) G:\crud\vrud_env>cd crudproject
+
+(vrud_env) G:\crud\vrud_env\crudproject>
